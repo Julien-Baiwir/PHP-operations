@@ -27,4 +27,4 @@ if( $room_filthiness[0] ){
 // ...
 } else {
 	echo "<br>Nothing to do, room is neat.";
-}
+};
