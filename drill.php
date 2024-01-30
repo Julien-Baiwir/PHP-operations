@@ -105,16 +105,32 @@ echo '<br>';
 	<input type="submit" name="submit" value="Validate">
 </form>
 <br>
+<br>
+<br>
+<!-- 6. L’équipe de football des filles
+Vous souhaitez créer une équipe de football pour filles entre 21 et 40 ans.
 
+Créez un formulaire demandant l'âge, le sexe et le nom de la personne. Utilisez les variables $age et $gender dans un if/else pour afficher un message « bienvenue dans l'équipe ! » ou « Désolé, vous ne répondez pas aux critères ». -->
+<form method="get">
+    <label for="age">Age : </label> <input type="number" name="age">
+    <br>
+    <label for="gender">Gender: </label> 
+    man: <input type="radio" name="gender" value="man"> 
+    woman: <input type="radio" name="gender" value="woman">
+    <br>
+    <label for="name">What is your name? : </label> <input type="text" name="name">
+    <br>
+    <input type="submit" name="submit" value="Validate">
+</form>
 
-<!-- 5. Affichez un message d'accueil différent selon l'âge, le sexe et la langue maternelle de l'utilisateur.
-Améliorez le formulaire précédent pour ajouter encore une autre question : "Parlez-vous anglais ? ". Utilisez une entrée de type radiopour capturer les données. Réponses possibles : « oui » ou « non ».
+<?php
 
-Modifiez ensuite votre script de traitement de formulaire pour implémenter ceci :
+if (isset($_GET['age'])){
+    $gender = $_GET['gender'];
+	$name = $_GET['name'];
 
-Si l'âge est inférieur à 12 ans et que l'utilisateur répond "oui", affichez : "Bonjour mon garçon !" ou "Bonjour Girl!" selon le sexe indiqué.
-Si la réponse est « non », affichez « Aloha boy » ou « Aloha Girl ».
-Adaptez toutes les autres réponses en conséquence, en utilisant « Aloha » au lieu de « Bonjour ». -->
+}
 
+?>
 
 
