@@ -106,7 +106,14 @@ echo '<br>';
 </form>
 <br>
 
+<!-- 5. Affichez un message d'accueil différent selon l'âge, le sexe et la langue maternelle de l'utilisateur.
+Améliorez le formulaire précédent pour ajouter encore une autre question : "Parlez-vous anglais ? ". Utilisez une entrée de type radiopour capturer les données. Réponses possibles : « oui » ou « non ».
 
+Modifiez ensuite votre script de traitement de formulaire pour implémenter ceci :
+
+Si l'âge est inférieur à 12 ans et que l'utilisateur répond "oui", affichez : "Bonjour mon garçon !" ou "Bonjour Girl!" selon le sexe indiqué.
+Si la réponse est « non », affichez « Aloha boy » ou « Aloha Girl ».
+Adaptez toutes les autres réponses en conséquence, en utilisant « Aloha » au lieu de « Bonjour ». -->
 
 
 
