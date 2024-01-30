@@ -106,6 +106,7 @@ echo '<br>';
 </form>
 <br>
 
+
 <!-- 5. Affichez un message d'accueil différent selon l'âge, le sexe et la langue maternelle de l'utilisateur.
 Améliorez le formulaire précédent pour ajouter encore une autre question : "Parlez-vous anglais ? ". Utilisez une entrée de type radiopour capturer les données. Réponses possibles : « oui » ou « non ».
 
