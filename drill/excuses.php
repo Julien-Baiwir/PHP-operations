@@ -28,5 +28,11 @@
 </form>
 
 <?php
-echo "réponse";
+if(isset($_GET["childName"])){
+    $childName = $_GET["childName"];
+      
+}
+
+
 ?>
+
