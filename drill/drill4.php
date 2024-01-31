@@ -15,7 +15,7 @@ if (isset($_GET['note'])) {
             echo "Note égale à 5";
     }
 }
-
+// switch (true){}
 ?>
 
 <form method="GET" action="">
