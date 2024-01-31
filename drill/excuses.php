@@ -30,9 +30,42 @@
 <?php
 if(isset($_GET["childName"])){
     $childName = $_GET["childName"];
-      
-}
+    $gender = $_GET['gender'];
+    $teacherName = $_GET['teacherName'];
+    $date = $_GET['date'];
+    $date = date("l, j F Y");
+    $excuse = $_GET['excuse'];
 
+    switch ($excuse){
+        case "illness":
+            $excuse = "illness";
+            break;
+        case "bereavement":
+            $excuse = "bereavement";
+            break;
+        case "extracurricular activity":
+             $excuse = "extracurricular activity";
+             break;
+        case "family issues":
+             $excuse = "family issues";
+             break;
+        case "car breakdown":
+            $excuse = "car breakdown";
+             break;
+    }
+
+    switch ($gender){
+        case "male":
+            $gender = "my boy";
+            break;
+        case "female":
+            $gender = "my girl";
+            break;
+        }
+
+echo "Dear $teacherName, $gender $childName will not be there $date,for the reason of $excuse, be well.";
+ 
+}
 
 ?>
 
