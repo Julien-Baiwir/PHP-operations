@@ -91,9 +91,25 @@ echo genererAcronyme($chaine);
 <br>
 <br>
 <?php 
-echo 'Exercice 6';
-echo "</br>";
+// echo 'Exercice 6 replace($words)';
+// echo "</br>";
+// echo 'hello';
+// $words = ["caecotrophie", "chaenichthys", "microsphaera", "sphaerotheca"];
+// function replace($words){
+//     for ($i =0; i< count ($words); $i++){
+//         $words[$i] = str_replace("ae", "æ", $words[$i]);
+//         echo $words[$i] . '<br>';
+//     }
+// }
+// replace($words);
+?>
+<br>
+<br>
 
+<br>
+<br>
+<?php 
+echo 'Exercice 7 replace($words)';
 
 ?>
 <br>
