@@ -78,14 +78,10 @@ foreach ($mots as $mot) {
         $acronyme .= strtoupper($lettre[0]);
     }
 }
-
 return $acronyme;
 }
-
 $chaine = "La vie est belle !";
 echo genererAcronyme($chaine);
-
-
 ?>
 <br>
 <br>
