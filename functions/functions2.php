@@ -27,10 +27,12 @@ echo $chaine;
 <br>
 <br>
 <?php
-// Volume of a cone which ray is 5 and height is 2 
-$volume = 5 * 5 * 3.14 * 2 * (1/3);  
-echo 'The volume of a cone which ray is 5 and height is 2 = ' . $volume . ' cm<sup>3</sup><br />';  
-// Volume of a cone which ray is 3 and height is 4  
-$volume = 3 * 3 * 3.14 * 4 * (1/3);  
-echo 'The volume of a cone which ray is 3 and height is 4 = ' . $volume . ' cm<sup>3</sup><br />';  
+function volume($rayon, $hauteur){
+    $volume = (1/3) * 3.14 * $rayon * $rayon * $hauteur;
+    $formattedVolume = number_format($volume, 2);
+    return $volume = 'The volume of a cone which ray is  ' . $hauteur. ' and height is ' . $rayon .'= ' . $formattedVolume . ' cm<sup>3</sup><br />'; 
+};
+echo volume(5,2);
  ?>
+<br>
+<br>
