@@ -27,12 +27,29 @@ echo $chaine;
 <br>
 <br>
 <?php
-function volume($rayon, $hauteur){
+function calculate_cone_volume($rayon, $hauteur){
     $volume = (1/3) * 3.14 * $rayon * $rayon * $hauteur;
     $formattedVolume = number_format($volume, 2);
     return $volume = 'The volume of a cone which ray is  ' . $hauteur. ' and height is ' . $rayon .'= ' . $formattedVolume . ' cm<sup>3</sup><br />'; 
 };
-echo volume(5,2);
+echo calculate_cone_volume(5,2);
+ ?>
+<br>
+<br>
+
+
+<br>
+<br>
+<?php
+function generateString($min, $max){
+   $min = 1;
+   $max1 = rand(2,5);
+   $max2 = rand(2,15);
+
+
+}
+
+
  ?>
 <br>
 <br>
