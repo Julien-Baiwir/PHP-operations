@@ -1,12 +1,13 @@
 <?php 
-// echo 'Exercice';
-// $name = 'émile';
-// function firstLetter($name) {
-//     return mb_convert_case($name, MB_CASE_TITLE, 'UTF-8');
-// }
-// $result = firstLetter($name);
-// echo $result;
+echo 'Exercice';
+$name = 'émile';
+function firstLetter($name) {
+    return mb_convert_case($name, MB_CASE_TITLE, 'UTF-8');
+}
+$result = firstLetter($name);
+echo $result;
 ?>
+
 <?php 
 echo 'Exercice 2';
 echo "</br>";
@@ -94,14 +95,21 @@ echo genererAcronyme($chaine);
 // echo 'Exercice 6 replace($words)';
 // echo "</br>";
 // echo 'hello';
-// $words = ["caecotrophie", "chaenichthys", "microsphaera", "sphaerotheca"];
-// function replace($words){
-//     for ($i =0; i< count ($words); $i++){
-//         $words[$i] = str_replace("ae", "æ", $words[$i]);
-//         echo $words[$i] . '<br>';
-//     }
-// }
-// replace($words);
+
+$words = ["caecotrophie", "chaenichthys", "microsphaera", "sphaerotheca"];
+
+function replace($words){
+    for ($i = 0; $i < count($words); $i++){
+        $words[$i] = str_replace("ae", "æ", $words[$i]);
+    }
+    return $words;  
+}
+
+echo '<pre>';
+print_r(replace($words));
+echo '</pre>';
+
+
 ?>
 <br>
 <br>
@@ -109,7 +117,7 @@ echo genererAcronyme($chaine);
 <br>
 <br>
 <?php 
-echo 'Exercice 7 replace($words)';
+echo 'Exercice 7 notice / warning';
 
 ?>
 <br>
