@@ -41,15 +41,47 @@ echo calculate_cone_volume(5,2);
 <br>
 <br>
 <?php
-function generateString($min, $max){
-   $min = 1;
-   $max1 = rand(2,5);
-   $max2 = rand(2,15);
+function generateRandomWord($minLength, $maxLength) {
+    $allLetters = array_merge(range('a', 'z'), range('A', 'Z'));
+    shuffle($allLetters);
 
+    $length = rand($minLength, $maxLength);
+    $randomWord = substr(implode('', $allLetters), 0, $length);
 
+    return $randomWord;
 }
 
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $word1 = generateRandomWord(1, 5);
+    $word2 = generateRandomWord(7, 15);
+} else {
+    $word1 = '';
+    $word2 = '';
+}
+?>
 
- ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate a New Word</title>
+</head>
+<body>
+    <h1>Generate a New Word</h1>
+
+    <?php if ($_SERVER['REQUEST_METHOD'] === 'POST'): ?>
+        <p>Generated Words:</p>
+        <p><?php echo $word1; ?></p>
+        <p><?php echo $word2; ?></p>
+    <?php endif; ?>
+
+    <form method="post">
+        <button type="submit">Generate</button>
+    </form>
+</body>
+</html>
+
+
 <br>
 <br>
