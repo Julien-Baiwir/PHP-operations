@@ -1,5 +1,5 @@
 <?php 
-echo 'Exercice';
+
 $name = 'émile';
 function firstLetter($name) {
     return mb_convert_case($name, MB_CASE_TITLE, 'UTF-8');
@@ -7,6 +7,7 @@ function firstLetter($name) {
 $result = firstLetter($name);
 echo $result;
 ?>
+
 
 <?php 
 echo 'Exercice 2';
@@ -118,7 +119,10 @@ echo '</pre>';
 <br>
 <?php 
 echo 'Exercice 7 notice / warning';
+echo feedback("Incorrect email address", "error");
+$userAgent = $_SERVER['HTTP_USER_AGENT'];
 
+echo "User Agent: $userAgent";
 ?>
 <br>
 <br>
