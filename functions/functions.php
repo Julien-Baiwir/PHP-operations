@@ -7,7 +7,8 @@ function firstLetter($name) {
 $result = firstLetter($name);
 echo $result;
 ?>
-
+<br>
+<br>
 
 <?php 
 echo 'Exercice 2';
